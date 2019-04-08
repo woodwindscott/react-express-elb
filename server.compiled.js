@@ -10,7 +10,7 @@ var PORT = process.env.HTTP_PORT || 4001;
 var app = (0, _express["default"])();
 app.use(_express["default"]["static"](_path["default"].join(__dirname, 'client', 'build')));
 app.get('/', function (req, res) {
-  res.send('just gonna send it');
+  res.send('flowers smell nice');
 });
 app.get('/flower', function (req, res) {
   res.json({
